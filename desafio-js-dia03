@@ -1,0 +1,74 @@
+const eleccion1 = prompt("A que Area quieres seguir : Selecciona 1 para Front-End o selecciona 2 para Back-end ");
+
+if( eleccion1 == 1){
+   const eleccion2 = prompt("Escribe 1 para React o escribe 2 para Vue"); 
+
+    if (eleccion2 == 1){
+		const eleccion3 = prompt("Escribe 1 para Seguir especializandose en React o escribe 2 para desarrollarse como FullStack");
+	
+	 if (eleccion3 == 1){
+			alert("Genial React es un lenguaje muy Interesante");
+		 }else if (eleccio3 == 2){
+			alert("Genial FullStack es una camino emocionante, Animo!");
+		 }else{
+		 alert("Eleccion incorrecta");
+		 }
+        
+    }else if (eleccion2 == 2){
+	
+		const eleccion3 = prompt("Escribe 1 para Seguir especializandose en Vue o escribe 2 para desarrollarse como FullStack");
+	
+	 if (eleccion3 == 1){
+			alert("Genial Vue es un lenguaje muy Interesante");
+		 }else if (eleccion2 == 2){
+			alert("Genial FullStack es una camino emocionante, Animo!");
+		 }else{
+		 alert("Eleccion incorrecta");
+		 }
+        
+    }else{
+	alert("Eleccion incorrecta");
+	}
+    
+
+}else if (eleccion1 == 2){
+	 const eleccion2 = prompt("Escribe 1 para c# o escribe 2 para Java"); 
+	 
+	 if (eleccion2 == 1){
+	 
+	 	const eleccion3 = prompt("Escribe 1 para Seguir especializandose en C# o escribe 2 para desarrollarse como FullStack");
+	
+		 if (eleccion3 == 1){
+			alert("Genial C# es un lenguaje muy Interesante");
+		 }else if (eleccion2 == 2){
+			alert("Genial FullStack es una camino emocionante, Animo!");
+		 }else{
+		 alert("Eleccion incorrecta");
+		 }
+	  }else if (eleccion2 == 2){
+	  
+	  const eleccion3 = prompt("Escribe 1 para Seguir especializandose en Java o escribe 2 para desarrollarse como FullStack");
+		
+		if (eleccion3 == 1){
+			alert("Genial Java es un lenguaje muy Interesante");
+		 }else if (eleccion3 == 2){
+			alert("Genial FullStack es una camino emocionante, Animo!");
+		 }else{
+		 alert("Eleccion incorrecta");
+		 }
+        
+    }else{
+	alert("Eleccion incorrecta");
+	}
+
+}else{
+
+alert("Eleccion incorrecta");
+}
+
+let mensaje = prompt("¿Hay alguna otra tecnología que te gustaría aprender? Escribe 'ok' en caso positivo.");
+while (mensaje === "ok") {
+    let nuevaTecnología = prompt("¿Cuál tecnología?");
+    alert(`¡${nuevaTecnología} es realmente una tecnología muy interesante!`);
+    mensaje = prompt("¿Hay alguna otra tecnología que te gustaría aprender? Escribe 'ok' en caso positivo.");
+}
