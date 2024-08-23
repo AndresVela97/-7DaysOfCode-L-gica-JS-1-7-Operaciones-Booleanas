@@ -1,0 +1,46 @@
+let categorias = ["frutas ", "lacteos ", "congelados ", "dulces ", "granos"];
+let frutas = [];
+let lacteos = [];
+let congelados = [];
+let dulces = [];
+let granos = [];
+
+let pregunta = prompt("¿Deseas agregar un alimento?, responde si o no");
+
+while (pregunta != "no") {
+
+    if (pregunta === 'si') {
+         let alimento = prompt("¿Qué alimento deseas agregar?");
+    let categoria = prompt("¿A que categoria pertence?, puedes elegir entre: " + categorias);
+    
+    if (categoria == "frutas") {
+        frutas.push(" " + alimento);
+    } else if (categoria == "lacteos"){
+        lacteos.push(" " + alimento);
+    }else if (categoria == "congelados"){
+        congelados.push(" " + alimento);
+    }else if (categoria == "dulces"){
+        dulces.push(" " + alimento);
+    }else if (categoria == "granos"){
+        granos.push(" " + alimento);
+    }else{
+        alert("La categoria no esta presente, por favor vuelve a agregar el alimento con una categoria presente");
+    }       
+    pregunta = prompt("¿Deseas agregar otro alimento?, responde si o no");
+    } else {
+         alert("Responde con si o no por favor");
+        pregunta = prompt("¿Deseas agregar un alimento?, responde si o no");
+    }
+    
+   
+}
+
+if (pregunta === "no") {
+
+     alert("Lista de compras: " 
+           + "\r\n Frutas: "  + frutas 
+           + "\r\n Lacteos: " + lacteos
+           + "\r\n Congelados: " + congelados 
+           + "\r\n Dulces: " + dulces
+           + "\r\n Granos: " + granos);
+}
