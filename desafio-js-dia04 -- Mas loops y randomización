@@ -1,0 +1,20 @@
+let numeroSecreto = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+const numeroIntentos = 3;
+let intentosRealizados = 1;
+
+for(intentosRealizados; intentosRealizados <= numeroIntentos; intentosRealizados ++){
+
+    let pregunta = prompt("Adivina el numero secreto!");   
+    if(numeroSecreto == pregunta){
+      alert("Felicidades, Adivinaste el numero secreto: " + numeroSecreto);
+      break;  
+    }else {   
+        if(numeroIntentos === intentosRealizados){
+           alert("Lo siento, no adivinaste el numero sercreto, el numero secreto es: " + numeroSecreto);
+            break;
+        }else{
+            let totalIntentos = numeroIntentos-intentosRealizados;
+             alert("Lo siento, no adivinaste el numero sercreto, tienes: " + totalIntentos + " intentos");
+        }
+    }
+}
